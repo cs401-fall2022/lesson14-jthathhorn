@@ -1,8 +1,8 @@
 h1{
-    border: 4px double rgb(196, 10, 10);
-    border-radius: 40px;
-    background-color: rgb(216, 217, 210);
-    color: #085a7e;
+    border: 3px double rgb(196, 10, 10);
+    border-radius: 20px;
+    background-color: hsl(187, 90%, 23%);
+    color: #eaeef0;
     font-size: 37px;
     text-align: center;
     margin: 5px;
@@ -19,7 +19,7 @@ h1{
     border-radius: 20px;
     background-color: rgb(240, 241, 230);
     color: #02425e;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     margin: 5px;
     
@@ -33,7 +33,7 @@ h1{
     border-radius: 20px;
     background-color: rgb(240, 241, 230);
     color: #02425e;
-    font-size: 12px;
+    font-size: 13px;
     /*text-align: ;
 
     */
