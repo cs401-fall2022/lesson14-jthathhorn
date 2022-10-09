@@ -1,5 +1,5 @@
 h1{
-    border: 3px double rgb(196, 10, 10);
+    border: 3px solid rgb(196, 10, 10);
     border-radius: 20px;
     background-color: hsl(187, 90%, 23%);
     color: #eaeef0;
@@ -8,8 +8,16 @@ h1{
     margin: 5px;
     margin-bottom: 10px;
   }
-
-  h2{
+.tabs{
+    /*margin: 5%;*/
+    margin-left: 10% ;
+    font-size:medium;
+}
+.tabs_alt{
+    margin-left: 10% ;
+    font-size: small;
+}
+h2{
     padding-top: 0px;
     margin-top: 10px;
   }
@@ -18,7 +26,7 @@ h1{
     border: 3px double rgb(196, 10, 10);
     border-radius: 20px;
     background-color: rgb(240, 241, 230);
-    color: #02425e;
+    color: #750101;
     font-size: 14px;
     text-align: center;
     margin: 5px;
@@ -32,7 +40,7 @@ h1{
     border: 3px double rgb(196, 10, 10);
     border-radius: 20px;
     background-color: rgb(240, 241, 230);
-    color: #02425e;
+    color: #1e0000;
     font-size: 13px;
     /*text-align: ;
 
