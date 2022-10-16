@@ -37,7 +37,7 @@
                         <li>options in levels of type strictness, </li>
                         <li>options to display which errors and warnings; MENTION:
                             <ul>
-                                <li>UNKNOWN---when writtnen in TS, requires user to specify type</li>
+                                <li>UNKNOWN---when written in TS, requires user to specify type</li>
                                 <li>and NEVER---forbids specified type from being used by user</li>
                             </ul>
                         </li>
@@ -77,10 +77,18 @@
                 <div><br>Creating an instance of a Task: </div> <img src=img/newTask.png alt="new task image" width="50%">
             </div>
             <div id="container">
-                <div><br>Entering a value of the wrong type prompts a TS warning:<br><br></div>
+                <div><br><p><em>Entering a value of the wrong type prompts a TS warning 
+                    (same </em><span id="background">Task</span><em> instance as above):</em></p></div>
             </div>
             <div id="container">
-                <div><img src="img/taskError.png" width="90%"></div>
+                <div ><img src="img/taskError.png" width="90%"></div>
+            </div>
+            <div id="container">
+                <div><br>If you want to suppress a warning, simply use <span id="background">@ts-ignore</span> :</div>
+                <div style="width: 50%;"><img style="float: right;" src="img/ts_ignore.png" alt="@ts-ignore" width="100%"></div>
+            </div>
+            <div id="container">
+                <p>You can set the </p>
             </div>
 
         </div>

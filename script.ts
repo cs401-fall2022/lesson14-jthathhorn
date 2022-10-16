@@ -6,10 +6,12 @@ type Task = {
     date: Date
 }
 
+
 const newTask: Task = {
     taskCategory: "bills",
     description: "pay HVAC service charge",
-    complete: false,
+    //@ts-ignore
+    complete: 13,
     date: new Date()
 }
 
