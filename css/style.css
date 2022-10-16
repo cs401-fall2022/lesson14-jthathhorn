@@ -7,6 +7,8 @@ h1{
     text-align: center;
     margin: 5px;
     margin-bottom: 10px;
+    min-width: 500px;
+
   }
 .tabs{
     /*margin: 5%*/
@@ -30,6 +32,8 @@ h2{
     font-size: 14px;
     text-align: center;
     margin: 5px;
+    min-width: 500px;
+
     
     padding-top: 2px;
     padding-bottom: 2px;
@@ -37,6 +41,8 @@ h2{
     padding-right: 15px;
 }
 .container_general{
+    min-width: 500px;
+
     border: 3px double rgb(196, 10, 10);
     border-radius: 20px;
     background-color: rgb(240, 241, 230);
@@ -52,3 +58,66 @@ h2{
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.container_example{
+    min-width: 500px;
+    border: 3px double rgb(196, 10, 10);
+    border-radius: 20px;
+    background-color: rgb(240, 241, 230);
+    color: #1e0000;
+    font-size: 13px;
+    
+
+    margin: auto;
+    
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    /*border: 1px green solid;*/
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ 
+ /* flex items */
+ #container > div {
+    justify-content: center;
+   /* border: 1px blue solid; */
+ }
+ 
+
+/*
+#alignCenter{
+    align-content: center;
+}
+
+article {
+    background: darkseagreen;
+    line-height: 100px;   
+ }
+#shiftLeft{
+    text-align: left;
+    margin: auto;
+   
+    float: left;
+    width: 50%;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+
+#shiftRight{
+    text-align: right;
+    margin: auto;
+    width: 50%;
+    float: right;
+}
+*/
