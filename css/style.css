@@ -1,11 +1,33 @@
+body{
+    min-width: 500px;
+    max-width: 1000px;
+    /*flex: 2 1 100%;   */
+    margin: auto;
+    border: 2px green solid;
+   
+
+
+}
+body > #container{
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px blue solid;
+    padding-left: .5%;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 h1{
     border: 3px solid rgb(196, 10, 10);
     border-radius: 20px;
     background-color: hsl(187, 90%, 23%);
     color: #eaeef0;
-    font-size: 37px;
+    font-size: 50px;
     text-align: center;
-    margin: 5px;
+ 
     margin-bottom: 10px;
     min-width: 500px;
 
@@ -22,6 +44,7 @@ h1{
 h2{
     padding-top: 0px;
     margin-top: 10px;
+    font-size: larger;
   }
 
 .container_overview{
@@ -29,9 +52,8 @@ h2{
     border-radius: 20px;
     background-color: rgb(240, 241, 230);
     color: #750101;
-    font-size: 14px;
+    font-size: 22px;
     text-align: center;
-    margin: 5px;
     min-width: 500px;
 
     
@@ -47,11 +69,7 @@ h2{
     border-radius: 20px;
     background-color: rgb(240, 241, 230);
     color: #1e0000;
-    font-size: 13px;
-    /*text-align: ;
-
-    */
-    margin: 5px;
+    font-size: 14px;
     
     padding-top: 2px;
     padding-bottom: 2px;
@@ -65,12 +83,8 @@ h2{
     border-radius: 20px;
     background-color: rgb(240, 241, 230);
     color: #1e0000;
-    font-size: 13px;
-    
+    font-size: 20px;
 
-    margin: auto;
-    
-    
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -91,33 +105,15 @@ h2{
  /* flex items */
  #container > div {
     justify-content: center;
-   /* border: 1px blue solid; */
+    /*border: 1px blue solid;*/
  }
  
-
-/*
-#alignCenter{
-    align-content: center;
-}
-
-article {
-    background: darkseagreen;
-    line-height: 100px;   
+ #background{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(238, 205, 188);
  }
-#shiftLeft{
-    text-align: left;
-    margin: auto;
-   
-    float: left;
-    width: 50%;
-    padding-bottom: 5px;
-    padding-top: 2px;
-}
 
-#shiftRight{
-    text-align: right;
-    margin: auto;
-    width: 50%;
-    float: right;
-}
-*/
+ #background_alt{
+    font-family: 'Courier New', Courier, monospace;
+   
+ }

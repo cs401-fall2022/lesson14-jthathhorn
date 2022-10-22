@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div>
+    <div id="container">
         <h1>TypeScript Tutorial</h1>
         <div class="container_overview">
             <h2>Welcome to TypeScript Tutorial</h2>
@@ -27,8 +27,10 @@
             </p>
             <ul>
                 <li>(OVERVIEW/INTRO to tutorial, succintly summarizing major points--WHAT IS TypeScript?)</li>
-                <li>In the abstract, high-level sense, TypeScript is JS but more, and it "sits" above the JavaScript code, and can give warnings
-                    and errors in real-time, while ensuring type-safety----as you write your code
+                <li>Since programming in JavaScript can be a little fast and loose, sometimes the programmer and the program 
+                    could benenfit from a little more order imposed "from above." TypeScript is JS but more: it's a customizable 
+                    layer "above" the JavaScript code, and can give type warnings and errors to ensure type-safety. 
+                    TS can be used in real-time by many IDEs--as you write your JS code.
                 </li>
                 <br>
                 <li>TypeScript tooling provides customizability/options for use
@@ -63,9 +65,6 @@
                     </ul>
                 </li>
                 <br>
-                <li>
-                    @ts-check, @ts-nocheck; @ts-ignore, @ts-expect-error
-                </li>
             </ul>
         </div>
         <div class="container_example">
@@ -74,11 +73,11 @@
                 <img src=img/typeTask.png alt="Task type image" width="50%">
             </div>
             <div id="container">
-                <div><span style="font-size: larger;">Example:</span><br>Creating an instance of a <span id="background">Task</span>: </div> <img src=img/newTask.png alt="new task image" width="50%">
+                <div><span style="font-size: larger;">Example:</span><br>Creating an instance of a <span id="background_alt">Task</span>: </div> <img src=img/newTask.png alt="new task image" width="50%">
             </div>
             <div id="container">
                 <div><br><p><em>Entering a value of the wrong type prompts a TS warning 
-                    (same </em><span id="background">Task</span><em> instance as above):</em></p></div>
+                    (same </em><span id="background_alt">Task</span><em> instance as above):</em></p></div>
             </div>
             <div id="container">
                 <div ><img src="img/taskError.png" width="90%"></div>
@@ -88,7 +87,8 @@
                 <div style="width: 50%;"><img style="float: right;" src="img/ts_ignore.png" alt="@ts-ignore" width="100%"></div>
             </div>
             <div id="container">
-                <p>You can set the </p>
+                <p><br>In a similar manner, you can set specific portions of your TS to<br>
+                 <span id="background">@ts-check</span>, <span id="background">@ts-nocheck</span>, or <span id="background">@ts-expect-error</span></p>
             </div>
 
         </div>
