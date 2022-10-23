@@ -3,7 +3,8 @@ body{
     max-width: 1000px;
     /*flex: 2 1 100%;   */
     margin: auto;
-    border: 2px green solid;
+    margin-bottom: 5%;
+    /*border: 2px green solid;*/
    
 
 
@@ -13,7 +14,7 @@ body > #container{
     gap: 0px;
     flex-direction: column;
     justify-content: center;
-    border: 1px blue solid;
+    /*border: 1px blue solid;*/
     padding-left: .5%;
 
     margin-left: 10px;
@@ -42,9 +43,11 @@ h1{
     font-size: small;
 }
 h2{
+    color: #750101;
     padding-top: 0px;
     margin-top: 10px;
     font-size: larger;
+    text-align: center;
   }
 
 .container_overview{
@@ -84,6 +87,7 @@ h2{
     background-color: rgb(240, 241, 230);
     color: #1e0000;
     font-size: 20px;
+    text-align: center;
 
     padding-top: 15px;
     padding-bottom: 15px;
@@ -95,6 +99,7 @@ h2{
     display: flex;
     justify-content: center;
     gap: 50px;
+    /*text-align: center;*/
 
     /*border: 1px green solid;*/
     padding-left: 5%;
@@ -117,3 +122,5 @@ h2{
     font-family: 'Courier New', Courier, monospace;
    
  }
+
+

@@ -10,9 +10,10 @@ type Task = {
 const newTask: Task = {
     taskCategory: "bills",
     description: "pay HVAC service charge",
-    //@ts-ignore
-    complete: 13,
+    complete: false,
     date: new Date()
 }
 
-
+function printToConsole(data:string){
+    console.log(data);
+}

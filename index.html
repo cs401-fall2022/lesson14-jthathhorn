@@ -16,83 +16,121 @@
         <div class="container_overview">
             <h2>Welcome to TypeScript Tutorial</h2>
             <p>This is a <i>brief overview</i> of some of the main points of TypeScript
-                for the newbie. It is meant to convey a <i>few key points</i> and provide a 
+                for the new user. It is meant to convey a <i>few key points</i> and provide a 
                 starter for further investigation of TypeScript (TS).
             </p>
         </div>
-        <div class="container_general">
-            <p>
-                OUTLINE-------<br><br>
-                Topics to cover -**-!-**-update as main points/differences btw JS/TS beome more clear:
-            </p>
-            <ul>
-                <li>(OVERVIEW/INTRO to tutorial, succintly summarizing major points--WHAT IS TypeScript?)</li>
-                <li>Since programming in JavaScript can be a little fast and loose, sometimes the programmer and the program 
+        <div class="container_example">
+    
+            <h2><em><b><br>What is TypeScript?<br><br></b></em></h2>
+            Since programming in JavaScript can be a little fast and loose, sometimes the programmer and the program 
                     could benenfit from a little more order imposed "from above." TypeScript is JS but more: it's a customizable 
                     layer "above" the JavaScript code, and can give type warnings and errors to ensure type-safety. 
                     TS can be used in real-time by many IDEs--as you write your JS code.
-                </li>
-                <br>
-                <li>TypeScript tooling provides customizability/options for use
-                    <ul>
-                        <li>supported by numerous editors/development platforms</li>
-                        <li>options in levels of type strictness, </li>
-                        <li>options to display which errors and warnings; MENTION:
-                            <ul>
-                                <li>UNKNOWN---when written in TS, requires user to specify type</li>
-                                <li>and NEVER---forbids specified type from being used by user</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>tsc--the TS compiler to type-check your JS code
-                    <ul>
-                        <li>with npm you can install the TS compiler from the <u>command line</u>:
-                            <br>
-                            <p class="tabs">
-                                <em><b>npm install -g typescript</b></em>
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                
-                <li>
-                    Strictness----different users want different things from TS
-                    <ul>
-                        <li>flags are customizable (in json file??)</li>
-                        <li>default settings are <em>least strict</em></li>
-                        <li>noImplicitAny & strictNullChecks flags</li>
-                    </ul>
-                </li>
-                <br>
-            </ul>
+                <br><br>
+
         </div>
         <div class="container_example">
+            <div id="container"><h2><em><b><br>TypeScript is easy to use<br><br><br></b></em></h2></div>
             <div id="container">
-                <div><br>TS allows you to declare types to ensure type enforcement:</div>
+                <div><br><br>TS allows you to declare types to ensure type enforcement:</div>
                 <img src=img/typeTask.png alt="Task type image" width="50%">
             </div>
+            <div id="container"></div>
             <div id="container">
-                <div><span style="font-size: larger;">Example:</span><br>Creating an instance of a <span id="background_alt">Task</span>: </div> <img src=img/newTask.png alt="new task image" width="50%">
+                <div><br><span style="font-size: larger;">Example:</span><br>Creating an instance of a <span id="background_alt">Task</span>: </div> <img src=img/newTask.png alt="new task image" width="50%">
             </div>
             <div id="container">
                 <div><br><p><em>Entering a value of the wrong type prompts a TS warning 
                     (same </em><span id="background_alt">Task</span><em> instance as above):</em></p></div>
             </div>
             <div id="container">
+                <div ><img src="img/error_beforehover.png" width="90%"></div>
+            </div>
+            <div id="container">
+                <div><br><p><em>Hovering over the underlined parameter reveals the warning message:</em></p></div>
+            </div>
+            <div id="container">
                 <div ><img src="img/taskError.png" width="90%"></div>
             </div>
+            <div id="container"></div>
             <div id="container">
                 <div><br>If you want to suppress a warning, simply use <span id="background">@ts-ignore</span> :</div>
                 <div style="width: 50%;"><img style="float: right;" src="img/ts_ignore.png" alt="@ts-ignore" width="100%"></div>
             </div>
+            <div id="container"></div>
             <div id="container">
                 <p><br>In a similar manner, you can set specific portions of your TS to<br>
-                 <span id="background">@ts-check</span>, <span id="background">@ts-nocheck</span>, or <span id="background">@ts-expect-error</span></p>
+                 <span id="background">@ts-check</span>, <span id="background">@ts-nocheck</span>, or <span id="background">@ts-expect-error</span>.</p>
             </div>
-
         </div>
 
+        <div class="container_example">
+            <h2><em><b><br>Strictness<br><br></b></em></h2>
+            <div>Different users want different things from TS. What's great is that TS is highly customizable.
+                As you've seen from the examples above, a user can use TS enforcement and settings locally
+                in a file. The default TS settings are the least <em>strict</em>. Strictness can also be customized more 
+                broadly in a <span id="background_alt"><b>tsconfig.json</b></span> file: <br><br><br><br>
+            </div><br>
+            <div id="container">
+                <div><br>For example, let's say we create a simple print function in our TS code:</div>
+                <div><img src="img/ts_before_set.png" width="70%"></div>
+            </div>
+            <div id="container">
+                <div><br>The <span id="background_alt">data</span> parameter above could be of any type, but if we set the
+                    <span id="background">noImplicitAny</span> flag to <span id="background_alt">true</span> in the
+                    <span id="background_alt"><b>tsconfig.json</b></span> file:
+                </div>
+            </div>
+            <div id="container">
+                <div>               
+                    <img src="img/tsconfig_nia_true.png" width="50%">
+                </div>
+            </div>
+            <div style="text-align: left;">           
+                    <p style="margin-left: 5%;">then TS will enforce type safety on our print function:</p>
+            </div>
+            <div id="container">
+                <div><img src="img/tsconfig_warning.png" alt="" width="80%"></div>
+            </div>
+            <div id="container">
+                <div style="text-align: left;">           
+                    <p style="margin-left: 5%;">The <span id="background">noImplicitAny</span> flag condition is easily satisfied
+                    by explicitly assigning the <span id="background_alt">data</span> parameter a type:</p>
+                </div>
+                <div><img src="img/tsconfig_warnsatisfied.png" alt="" width="90%"></div>
+            </div>
+            <div id="container">
+                <div><br><br>Many more options are available for customizing strictness within the
+                    <span id="background_alt"><b>tsconfig.json</b></span> file.</div>
+            </div>
+        </div>
+
+        <div class="container_example">
+            <h2><em><b><br>Compiling TS<br><br></b></em></h2>
+            <p>To compile TS code, you can use <em><b>tsc</b></em>, the TypeScript compiler.</p>
+            <p>With <em>npm</em>, you can install the compiler from the command line:</p>
+            <p style="font-size: larger;"><b>$</b><em><b> npm install -g typescript</b></em></p>
+        </div>
+
+        <div class="container_example">
+            <h2><em><b><br>TS on the command-line<br><br></b></em></h2>
+            <div>
+                <p>Let's return to the last example to see what the same type error looks like on the command line.</p>
+                <br><br>
+            </div>
+            <div>
+                With the  <span id="background">noImplicitAny</span> flag already set to  <span id="background_alt">true</span>
+                 in the <span id="background_alt"><b>tsconfig.json</b></span> file, we use <span style="font-size: larger;"><em><b>tsc</b></em></span>
+                 to compile our TS: <br><br>   
+            </div>
+            <div>
+                <img src="img/cmdLine_err.png" alt="commandline error img" width="90%"><br><br>
+            </div>
+            <div>
+                The error is easily resolved by declaring a parameter type, as demonstrated above.<br><br>
+            </div>
+        </div>
     </div>
 
 
